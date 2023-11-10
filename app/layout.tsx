@@ -1,20 +1,21 @@
 import { Navbar } from '@/components/common'
-import './globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import '../styles/globals.css'
+import { Footer } from '@/components/common/footer/Footer'
 
 export const metadata = {
-  title: "Virginia's Home Page",
+  title: "Wikisaurios",
   description: 'Generated  by Vercel',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es">
-      <body className={inter.className}>
+    <html lang="es" className='bg-gradient-to-r from-secondary ...'>
+      <body>
         <Navbar />
-        {children}
+        <div className='w-11/12'>
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   )

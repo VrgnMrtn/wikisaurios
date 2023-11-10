@@ -1,5 +1,7 @@
 export default function Herbivorous(){
     return (
-        <span className="text-7x1">Herbivorous</span>
+        <main className="main">
+            Herbivorous
+        </main>
     )
 }
